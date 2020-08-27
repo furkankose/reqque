@@ -1,0 +1,72 @@
+{
+  "name": "reqque",
+  "version": "1.0.0",
+  "main": "dist/reqque.js",
+  "module": "dist/reqque.esm.js",
+  "browser": "dist/reqque.umd.js",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/furkankose/reqque"
+  },
+  "scripts": {
+    "format": "prettier --write",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "build": "rollup -c",
+    "release": "yarn build && semantic-release"
+  },
+  "dependencies": {
+    "ajv": "^6.12.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "axios": "^0.19.2",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.4.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "rollup": "^2.23.1",
+    "rollup-plugin-terser": "^7.0.0",
+    "semantic-release": "^17.1.1",
+    "user-agents": "^1.0.559"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/src/**/*.js"
+    ],
+    "coverageDirectory": "./coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover",
+      "cobertura"
+    ],
+    "testEnvironment": "node"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

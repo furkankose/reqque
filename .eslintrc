@@ -1,0 +1,14 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["prettier"],
+  "env": {
+    "jest": true
+  },
+  "ignorePatterns": ["**/dist/*"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-await-in-loop": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}
