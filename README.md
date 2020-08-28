@@ -1,6 +1,6 @@
 # reqque
 
-[<img src="https://img.shields.io/github/package-json/v/furkankose/reqque" alt="Package Version" />](https://github.com/furkankose/reqque/releases/latest) [<img src="https://codecov.io/gh/furkankose/reqque/branch/master/graph/badge.svg?token=CGGJT5NCB0" alt="Codecov Report" />](http://codecov.io/gh/furkankose/reqque?branch=master) [<img src="https://img.shields.io/github/license/furkankose/reqque" alt="MIT Licence" />](LICENCE)
+[<img src="https://img.shields.io/github/package-json/v/furkankose/reqque" alt="Package Version" />](https://github.com/furkankose/reqque/releases/latest) [<img src="https://codecov.io/gh/furkankose/reqque/branch/master/graph/badge.svg?token=CGGJT5NCB0" alt="Codecov Report" />](http://codecov.io/gh/furkankose/reqque?branch=master) [<img src="https://img.shields.io/github/license/furkankose/reqque" alt="MIT Licence" />](LICENSE)
 
 Promise based JavaScript library that enables you to make numerous HTTP requests without bumping into the rate limits
 
