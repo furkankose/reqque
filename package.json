@@ -6,6 +6,7 @@
   "browser": "dist/reqque.umd.js",
   "type": "module",
   "license": "MIT",
+  "description": "Promise based JavaScript library that enables you to make numerous HTTP requests without bumping into the rate limits",
   "repository": {
     "type": "git",
     "url": "https://github.com/furkankose/reqque"
