@@ -12,6 +12,10 @@ describe("Config", () => {
       };
     });
 
+    it("should return default reqque config", () => {
+      expect(init()).toMatchObject(expectedConfig);
+    });
+
     it("should return reqque config", () => {
       expect(init(config)).toMatchObject(expectedConfig);
     });

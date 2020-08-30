@@ -14,7 +14,7 @@ const defineValueProperty = (object) => {
   });
 };
 
-const init = (customConfig) => {
+const init = (customConfig = {}) => {
   // clone custom config object to avoid side effect
   const config = JSON.parse(JSON.stringify(customConfig));
 
