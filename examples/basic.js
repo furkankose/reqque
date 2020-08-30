@@ -1,5 +1,5 @@
 import axios from "axios";
-import reqque from "../dist/reqque.esm.js"; // eslint-disable-line import/extensions
+import reqque from "../dist/reqque.esm";
 
 (async () => {
   const requests = [

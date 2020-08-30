@@ -4,7 +4,6 @@
   "main": "dist/reqque.js",
   "module": "dist/reqque.esm.js",
   "browser": "dist/reqque.umd.js",
-  "type": "module",
   "license": "MIT",
   "description": "Promise based JavaScript library that enables you to make numerous HTTP requests without bumping into the rate limits",
   "repository": {
@@ -12,6 +11,8 @@
     "url": "https://github.com/furkankose/reqque"
   },
   "scripts": {
+    "start:basic": "node -r esm ./examples/basic",
+    "start:advanced": "node -r esm ./examples/advanced",
     "format": "prettier --write",
     "lint": "eslint ./",
     "lint:fix": "eslint --fix",
@@ -42,6 +43,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "esm": "^3.2.25",
     "husky": "^4.2.5",
     "jest": "^26.4.0",
     "lint-staged": "^10.2.11",

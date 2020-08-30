@@ -1,7 +1,7 @@
 import axios from "axios";
 import UserAgent from "user-agents";
 import HttpsProxyAgent from "https-proxy-agent";
-import reqque from "../dist/reqque.esm.js"; // eslint-disable-line import/extensions
+import reqque from "../dist/reqque.esm";
 
 const getProxyList = async () => {
   const response = await axios.get(
