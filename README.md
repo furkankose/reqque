@@ -211,53 +211,26 @@ These are the available options of reqque config. All of them are optional. It w
 The result for a reqque request contains the following information.
 
 ```js
-{
-    // request item that was passed to request template
-    request: {},
+[
+  	{
+    		// request item that was passed to request template
+    		request: {},
 
-    // response body that was provided by the server
-    response: {},
+    		// response body that was provided by the server
+    		response: {},
 
-    // status of the request
-    status: "successful",
+    		// status of the request
+    		status: "successful",
 
-    // the total number of request attempts
-    tryCount: 1
-}
-```
-
-After all requests are completed, reqque splits the final results into two categories (successful and failed), and return the categorized results.
-
-```js
-{
-  // `successful` contains the successfull reqque results
-  successful: [
-    {
-        request: {},
-        response: {},
-        status: "successful",
-        tryCount: 1,
-    },
-    /*
+    		// the total number of request attempts
+    		tryCount: 1,
+  	},
+  	/*
+    {...},
     {...},
     {...}
     */
-  ],
-
-  // `failed` contains the failed reqque results
-  failed: [
-    {
-        request: {},
-        response: {},
-        status: "failed",
-        tryCount: 5,
-    },
-    /*
-    {...},
-    {...}
-    */
-  ]
-}
+];
 ```
 
 ## Resources

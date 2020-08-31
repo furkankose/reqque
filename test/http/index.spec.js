@@ -5,6 +5,9 @@ import expectedResults from "../_data/results";
 import { Status } from "../../src/enums";
 
 describe("Http", () => {
+  const successfulResult = expectedResults[0];
+  const failedResult = expectedResults[2];
+
   describe("makeRequest", () => {
     let request;
     let tryCount;
@@ -25,7 +28,7 @@ describe("Http", () => {
         retryLimit
       );
 
-      expect(result).toEqual(expectedResults.successful[0]);
+      expect(result).toEqual(successfulResult);
     });
 
     it("should return result with status pending", async () => {
@@ -36,7 +39,7 @@ describe("Http", () => {
       );
 
       expect(result).toEqual({
-        ...expectedResults.failed[0],
+        ...failedResult,
         status: Status.PENDING,
         tryCount: tryCount + 1,
       });
@@ -52,7 +55,7 @@ describe("Http", () => {
         retryLimit
       );
 
-      expect(result).toEqual(expectedResults.failed[0]);
+      expect(result).toEqual(failedResult);
       expect(result.status).toEqual(Status.FAILED);
     });
 

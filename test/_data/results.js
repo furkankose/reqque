@@ -1,114 +1,130 @@
-const results = {
-  successful: [
-    {
-      request: { id: 1 },
-      response: {
-        id: 1,
-        firstName: "Bennie",
-        lastName: "Dickinson",
-        email: "Bennie26@yahoo.com",
-      },
-      status: "successful",
-      tryCount: 1,
+const results = [
+  {
+    request: {
+      id: 1,
     },
-    {
-      request: { id: 2 },
-      response: {
-        id: 2,
-        firstName: "Johan",
-        lastName: "Lang",
-        email: "Johan_Lang15@gmail.com",
-      },
-      status: "successful",
-      tryCount: 1,
+    tryCount: 1,
+    response: {
+      id: 1,
+      firstName: "Bennie",
+      lastName: "Dickinson",
+      email: "Bennie26@yahoo.com",
     },
-    {
-      request: { id: 4 },
-      response: {
-        id: 4,
-        firstName: "Olin",
-        lastName: "Reichel",
-        email: "Olin_Reichel46@yahoo.com",
-      },
-      status: "successful",
-      tryCount: 1,
+    status: "successful",
+  },
+  {
+    request: {
+      id: 2,
     },
-    {
-      request: { id: 6 },
-      response: {
-        id: 6,
-        firstName: "Amos",
-        lastName: "Kassulke",
-        email: "Amos61@yahoo.com",
-      },
-      status: "successful",
-      tryCount: 1,
+    tryCount: 1,
+    response: {
+      id: 2,
+      firstName: "Johan",
+      lastName: "Lang",
+      email: "Johan_Lang15@gmail.com",
     },
-    {
-      request: { id: 8 },
-      response: {
-        id: 8,
-        firstName: "Rasheed",
-        lastName: "Rodriguez",
-        email: "Rasheed_Rodriguez@hotmail.com",
-      },
-      status: "successful",
-      tryCount: 1,
+    status: "successful",
+  },
+  {
+    request: {
+      id: 3,
     },
-    {
-      request: { id: 9 },
-      response: {
-        id: 9,
-        firstName: "Nico",
-        lastName: "Hermiston",
-        email: "Nico10@gmail.com",
-      },
-      status: "successful",
-      tryCount: 1,
+    tryCount: 11,
+    response: {
+      message: "The user with id '3' couldn't be found",
+      status: "NotFound",
+      statusCode: 404,
     },
-  ],
-  failed: [
-    {
-      request: { id: 3 },
-      response: {
-        message: "The user with id '3' couldn't be found",
-        status: "NotFound",
-        statusCode: 404,
-      },
-      status: "failed",
-      tryCount: 11,
+    status: "failed",
+  },
+  {
+    request: {
+      id: 4,
     },
-    {
-      request: { id: 5 },
-      response: {
-        message: "The user with id '5' couldn't be found",
-        status: "NotFound",
-        statusCode: 404,
-      },
-      status: "failed",
-      tryCount: 11,
+    tryCount: 1,
+    response: {
+      id: 4,
+      firstName: "Olin",
+      lastName: "Reichel",
+      email: "Olin_Reichel46@yahoo.com",
     },
-    {
-      request: { id: 7 },
-      response: {
-        message: "The user with id '7' couldn't be found",
-        status: "NotFound",
-        statusCode: 404,
-      },
-      status: "failed",
-      tryCount: 11,
+    status: "successful",
+  },
+  {
+    request: {
+      id: 5,
     },
-    {
-      request: { id: 10 },
-      response: {
-        message: "The user with id '10' couldn't be found",
-        status: "NotFound",
-        statusCode: 404,
-      },
-      status: "failed",
-      tryCount: 11,
+    tryCount: 11,
+    response: {
+      message: "The user with id '5' couldn't be found",
+      status: "NotFound",
+      statusCode: 404,
     },
-  ],
-};
+    status: "failed",
+  },
+  {
+    request: {
+      id: 6,
+    },
+    tryCount: 1,
+    response: {
+      id: 6,
+      firstName: "Amos",
+      lastName: "Kassulke",
+      email: "Amos61@yahoo.com",
+    },
+    status: "successful",
+  },
+  {
+    request: {
+      id: 7,
+    },
+    tryCount: 11,
+    response: {
+      message: "The user with id '7' couldn't be found",
+      status: "NotFound",
+      statusCode: 404,
+    },
+    status: "failed",
+  },
+  {
+    request: {
+      id: 8,
+    },
+    tryCount: 1,
+    response: {
+      id: 8,
+      firstName: "Rasheed",
+      lastName: "Rodriguez",
+      email: "Rasheed_Rodriguez@hotmail.com",
+    },
+    status: "successful",
+  },
+  {
+    request: {
+      id: 9,
+    },
+    tryCount: 1,
+    response: {
+      id: 9,
+      firstName: "Nico",
+      lastName: "Hermiston",
+      email: "Nico10@gmail.com",
+    },
+    status: "successful",
+  },
+  {
+    request: {
+      id: 10,
+    },
+    tryCount: 11,
+    response: {
+      message: "The user with id '10' couldn't be found",
+      status: "NotFound",
+      statusCode: 404,
+    },
+    status: "failed",
+  },
+];
 
 export default results;

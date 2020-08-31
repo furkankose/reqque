@@ -8,7 +8,8 @@ describe("reqque", () => {
   let config;
   const maxRetries = 10;
   const maxRequestCount = requests.length * (maxRetries + 1);
-  const redundantRequestCount = expectedResults.successful.length * maxRetries;
+  const successfulRequestCount = 6;
+  const redundantRequestCount = successfulRequestCount * maxRetries;
   const totalRequestCount = maxRequestCount - redundantRequestCount;
 
   beforeEach(() => {

@@ -1,7 +1,7 @@
 import axios from "axios";
 import UserAgent from "user-agents";
 import HttpsProxyAgent from "https-proxy-agent";
-import reqque from "../dist/reqque.esm";
+import reqque from "../src/reqque";
 
 const getProxyList = async () => {
   const response = await axios.get(
@@ -102,102 +102,98 @@ const getProxyList = async () => {
 
   console.log(results); //eslint-disable-line
   /*
-  {
-    "successful": [
-      {
-        "request": {
-          "method": "POST",
-          "code": 200,
-          "sleep": 100
-        },
-        "tryCount": 1,
-        "response": {
-          "code": 200,
-          "description": "OK"
-        },
-        "status": "successful"
+  [
+    {
+      "request": {
+        "method": "POST",
+        "code": 200,
+        "sleep": 100
       },
-      {
-        "request": {
-          "method": "POST",
-          "code": 201,
-          "sleep": 35
-        },
-        "tryCount": 1,
-        "response": {
-          "code": 201,
-          "description": "Created"
-        },
-        "status": "successful"
+      "tryCount": 1,
+      "response": {
+        "code": 200,
+        "description": "OK"
       },
-      {
-        "request": {
-          "method": "PATCH",
-          "code": 200,
-          "sleep": 350
-        },
-        "tryCount": 1,
-        "response": {
-          "code": 200,
-          "description": "OK"
-        },
-        "status": "successful"
+      "status": "successful"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "code": 400,
+        "sleep": 290
       },
-      {
-        "request": {
-          "method": "GET",
-          "code": 200,
-          "sleep": 450
-        },
-        "tryCount": 1,
-        "response": {
-          "code": 200,
-          "description": "OK"
-        },
-        "status": "successful"
-      }
-    ],
-    "failed": [
-      {
-        "request": {
-          "method": "GET",
-          "code": 400,
-          "sleep": 290
-        },
-        "tryCount": 3,
-        "response": {
-          "code": 400,
-          "description": "Bad Request"
-        },
-        "status": "failed"
+      "tryCount": 3,
+      "response": {
+        "code": 400,
+        "description": "Bad Request"
       },
-      {
-        "request": {
-          "method": "DELETE",
-          "code": 500,
-          "sleep": 700
-        },
-        "tryCount": 3,
-        "response": {
-          "code": 500,
-          "description": "Internal Server Error"
-        },
-        "status": "failed"
+      "status": "failed"
+    },
+    {
+      "request": {
+        "method": "POST",
+        "code": 201,
+        "sleep": 35
       },
-      {
-        "request": {
-          "method": "POST",
-          "code": 404,
-          "sleep": 85
-        },
-        "tryCount": 3,
-        "response": {
-          "code": 404,
-          "description": "Not Found"
-        },
-        "status": "failed"
-      }
-    ]
-  }
+      "tryCount": 1,
+      "response": {
+        "code": 201,
+        "description": "Created"
+      },
+      "status": "successful"
+    },
+    {
+      "request": {
+        "method": "DELETE",
+        "code": 500,
+        "sleep": 700
+      },
+      "tryCount": 3,
+      "response": {
+        "code": 500,
+        "description": "Internal Server Error"
+      },
+      "status": "failed"
+    },
+    {
+      "request": {
+        "method": "PATCH",
+        "code": 200,
+        "sleep": 350
+      },
+      "tryCount": 1,
+      "response": {
+        "code": 200,
+        "description": "OK"
+      },
+      "status": "successful"
+    },
+    {
+      "request": {
+        "method": "GET",
+        "code": 200,
+        "sleep": 450
+      },
+      "tryCount": 1,
+      "response": {
+        "code": 200,
+        "description": "OK"
+      },
+      "status": "successful"
+    },
+    {
+      "request": {
+        "method": "POST",
+        "code": 404,
+        "sleep": 85
+      },
+      "tryCount": 3,
+      "response": {
+        "code": 404,
+        "description": "Not Found"
+      },
+      "status": "failed"
+    }
+  ]
   */
 })();

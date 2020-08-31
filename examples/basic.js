@@ -1,5 +1,5 @@
 import axios from "axios";
-import reqque from "../dist/reqque.esm";
+import reqque from "../src/reqque";
 
 (async () => {
   const requests = [
@@ -40,74 +40,70 @@ import reqque from "../dist/reqque.esm";
 
   console.log(results); //eslint-disable-line
   /*
-  {
-    "successful": [
-      {
-        "request": "https://httpstat.us/200?sleep=100",
-        "tryCount": 1,
-        "response": {
-          "code": 200,
-          "description": "OK"
-        },
-        "status": "successful"
+  [
+    {
+      "request": "https://httpstat.us/200?sleep=100",
+      "tryCount": 1,
+      "response": {
+        "code": 200,
+        "description": "OK"
       },
-      {
-        "request": "https://httpstat.us/201?sleep=35",
-        "tryCount": 1,
-        "response": {
-          "code": 201,
-          "description": "Created"
-        },
-        "status": "successful"
+      "status": "successful"
+    },
+    {
+      "request": "https://httpstat.us/400?sleep=290",
+      "tryCount": 3,
+      "response": {
+        "code": 400,
+        "description": "Bad Request"
       },
-      {
-        "request": "https://httpstat.us/200?sleep=350",
-        "tryCount": 1,
-        "response": {
-          "code": 200,
-          "description": "OK"
-        },
-        "status": "successful"
+      "status": "failed"
+    },
+    {
+      "request": "https://httpstat.us/201?sleep=35",
+      "tryCount": 1,
+      "response": {
+        "code": 201,
+        "description": "Created"
       },
-      {
-        "request": "https://httpstat.us/200?sleep=450",
-        "tryCount": 1,
-        "response": {
-          "code": 200,
-          "description": "OK"
-        },
-        "status": "successful"
-      }
-    ],
-    "failed": [
-      {
-        "request": "https://httpstat.us/400?sleep=290",
-        "tryCount": 3,
-        "response": {
-          "code": 400,
-          "description": "Bad Request"
-        },
-        "status": "failed"
+      "status": "successful"
+    },
+    {
+      "request": "https://httpstat.us/500?sleep=700",
+      "tryCount": 3,
+      "response": {
+        "code": 500,
+        "description": "Internal Server Error"
       },
-      {
-        "request": "https://httpstat.us/500?sleep=700",
-        "tryCount": 3,
-        "response": {
-          "code": 500,
-          "description": "Internal Server Error"
-        },
-        "status": "failed"
+      "status": "failed"
+    },
+    {
+      "request": "https://httpstat.us/200?sleep=350",
+      "tryCount": 1,
+      "response": {
+        "code": 200,
+        "description": "OK"
       },
-      {
-        "request": "https://httpstat.us/404?sleep=85",
-        "tryCount": 3,
-        "response": {
-          "code": 404,
-          "description": "Not Found"
-        },
-        "status": "failed"
-      }
-    ]
-  }
+      "status": "successful"
+    },
+    {
+      "request": "https://httpstat.us/200?sleep=450",
+      "tryCount": 1,
+      "response": {
+        "code": 200,
+        "description": "OK"
+      },
+      "status": "successful"
+    },
+    {
+      "request": "https://httpstat.us/404?sleep=85",
+      "tryCount": 3,
+      "response": {
+        "code": 404,
+        "description": "Not Found"
+      },
+      "status": "failed"
+    }
+  ]
   */
 })();
