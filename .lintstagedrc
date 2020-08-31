@@ -1,6 +1,6 @@
 {
    "**/**/*.js": [
-     "npm run format",
-     "npm run lint:fix"
+     "yarn format",
+     "yarn lint:fix"
    ]
  }

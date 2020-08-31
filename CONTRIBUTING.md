@@ -43,7 +43,7 @@ GitHub issues are used to track public bugs. Report a bug by [opening a new issu
 ## Use a Consistent Coding Style
 
 - You need to follow [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
-- You can try running `npm run lint` for style unification
+- You can try running `yarn lint` for style unification
 
 ## License
 
