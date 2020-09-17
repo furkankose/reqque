@@ -1,6 +1,6 @@
 {
   "name": "reqque",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "dist/reqque.js",
   "module": "dist/reqque.esm.js",
   "browser": "dist/reqque.umd.js",
@@ -8,7 +8,7 @@
   "description": "Promise based JavaScript library that enables you to make numerous HTTP requests without bumping into the rate limits",
   "repository": {
     "type": "git",
-    "url": "https://github.com/furkankose/reqque"
+    "url": "https://github.com/furkankose/reqque.git"
   },
   "scripts": {
     "start:basic": "node -r esm ./examples/basic",
@@ -20,7 +20,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "build": "rollup -c",
-    "release": "semantic-release"
+    "release": "yarn build && semantic-release"
   },
   "dependencies": {
     "ajv": "^6.12.2"
@@ -35,7 +35,6 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.0",
     "axios": "^0.19.2",
     "babel-jest": "^26.3.0",
