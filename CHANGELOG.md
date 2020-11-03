@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/furkankose/reqque/compare/v2.0.2...v2.0.3) (2020-11-03)
+
+
+### Bug Fixes
+
+* update package version ([18c9cc1](https://github.com/furkankose/reqque/commit/18c9cc188280306e79577d014ffe386c129bce7e))
+
 ## [2.0.2](https://github.com/furkankose/reqque/compare/v2.0.1...v2.0.2) (2020-11-03)
 
 
