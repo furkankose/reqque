@@ -1,6 +1,6 @@
 {
   "name": "reqque",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "dist/reqque.js",
   "module": "dist/reqque.esm.js",
   "browser": "dist/reqque.umd.js",
