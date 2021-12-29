@@ -18,7 +18,7 @@ jobs:
       - name: Test
         run: yarn test:cov
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1.0.7
+        uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/cobertura-coverage.xml
